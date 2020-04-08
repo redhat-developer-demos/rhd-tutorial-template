@@ -63,7 +63,8 @@
             clearTooltip(this)
           })
   
-          var clipboardSnippets = new ClipboardJS($el)
+          var clipboardSnippets = new ClipboardJS($el);
+
           clipboardSnippets.on('success', function (e) {
             e.clearSelection()
             showTooltip(e.trigger, 'Copied!')

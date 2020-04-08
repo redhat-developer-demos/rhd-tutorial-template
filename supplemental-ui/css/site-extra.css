@@ -12,7 +12,7 @@
 button.bd-copy {
     border-radius: 2px;
     font-size: .75rem;
-    background: #fff 0 0;
+    background: transparent;
     color: #212121;
     cursor: pointer;
     outline: 0;
