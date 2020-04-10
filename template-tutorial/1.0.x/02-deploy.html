@@ -101,15 +101,35 @@
 <article class="doc">
 <h1>Template Tutorial</h1>
 <div class="sect1">
+<h2 id="service"><a class="anchor" href="#service"></a>The Service</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The code:</p>
+</div>
+<div class="listingblock lines_7">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class Main {
+
+    public static void main(String[] args) {
+
+    }
+
+}
+
+./mvnw compile</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="package"><a class="anchor" href="#package"></a>Packaging the Service</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You can package the next bash script:</p>
 </div>
-<div id="servicebash" class="listingblock">
+<div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">#!/bin/sh
-
 echo "Hello World"</code></pre>
 </div>
 </div>
@@ -124,9 +144,9 @@ echo "Hello World"</code></pre>
 <div class="paragraph">
 <p>Check that the pod is up and running:</p>
 </div>
-<div class="listingblock">
+<div class="listingblock lines_space">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell-session hljs" data-lang="shell-session">kubectl get pods
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl get pods
 
 NAME                        READY   STATUS    RESTARTS   AGE
 apps   1/1     Running   0          5s</code></pre>
@@ -137,7 +157,7 @@ apps   1/1     Running   0          5s</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell-session hljs" data-lang="shell-session">kubectl exec -ti apps /bin/bash</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl exec -ti apps /bin/bash</code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
