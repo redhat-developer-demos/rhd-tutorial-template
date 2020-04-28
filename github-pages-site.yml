@@ -17,6 +17,7 @@ asciidoc:
     title: Template Tutorial
   extensions:
     - ./lib/tab-block.js
+    - ./lib/remote-include-processor.js
 
 ui:
   bundle:
