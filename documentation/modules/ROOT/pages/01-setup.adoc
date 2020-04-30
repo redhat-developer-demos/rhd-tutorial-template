@@ -15,7 +15,7 @@ include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-c
 
 :tutorial-namespace: my_namespace
 
-include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/kubernetes-install.adoc[]
+include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/kubernetes-setup.adoc[]
 
 And then you are ready for start using Kubernetes:
 
