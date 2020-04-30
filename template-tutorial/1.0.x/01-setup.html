@@ -230,6 +230,9 @@ Although they are used in the tutorial, you could use others without any problem
 <div class="sect1">
 <h2 id="minikube"><a class="anchor" href="#minikube"></a>Setup Kubernetes</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>The profile {profile} is created to run the tutorial:</p>
+</div>
 <div class="tabset is-loading">
 <div class="ulist tabs">
 <ul>
@@ -244,7 +247,7 @@ Although they are used in the tutorial, you could use others without any problem
 <div class="content">
 <div class="tab-pane" aria-labelledby="tabset1_minikube">
 <div class="paragraph">
-<p>Having <code>minikube</code> installed and in your <code>PATH</code> and then run:</p>
+<p>Having <code>minikube</code> installed and in your <code>PATH</code>, then run:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -259,7 +262,7 @@ Although they are used in the tutorial, you could use others without any problem
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">❌  profile "{profile}" not found
 ✅  Created a new profile : {profile}
 ✅  minikube profile was successfully set to {profile}
-😄  [{tutorial-namespace}] minikube v1.9.2 on Darwin 10.15.2
+😄  [default] minikube v1.9.2 on Darwin 10.15.2
 ✨  Selecting 'virtualbox' driver from user configuration (alternates: [hyperkit])
 🔥  Creating virtualbox VM (CPUs=2, Memory=8192MB, Disk=50000MB) ...
 🐳  Preparing Kubernetes v1.17.4 on Docker '19.03.5' ...
@@ -328,8 +331,9 @@ Kubernetes Version: v1.17.4</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">git clone <a href="https://github.com/redhat-developer-demos/rhd-tutorial-common.git" class="bare">https://github.com/redhat-developer-demos/rhd-tutorial-common.git</a> my_folder &amp;&amp;\
-export TUTORIAL_HOME="$(pwd)/my_folder"</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">git clone <a href="https://github.com/redhat-developer-demos/rhd-tutorial-common.git" class="bare">https://github.com/redhat-developer-demos/rhd-tutorial-common.git</a> my_folder &amp;&amp; \
+export TUTORIAL_HOME="$(pwd)/my_folder" &amp;&amp; \
+cd $TUTORIAL_HOME</code></pre>
 </div>
 </div>
 </div>
