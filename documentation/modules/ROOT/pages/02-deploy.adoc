@@ -7,6 +7,7 @@ include::_attributes.adoc[]
 The code:
 
 [.lines_7]
+[.console-input]
 [source, java,subs="+macros,+attributes"]
 ----
 public class Main {
