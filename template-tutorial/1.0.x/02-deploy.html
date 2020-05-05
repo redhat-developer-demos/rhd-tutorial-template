@@ -106,7 +106,7 @@
 <div class="paragraph">
 <p>The code:</p>
 </div>
-<div class="listingblock lines_7">
+<div class="listingblock lines_7 console-input">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class Main {
 
@@ -144,18 +144,21 @@ echo "Hello World"</code></pre>
 <div class="paragraph">
 <p>Check that the pod is up and running:</p>
 </div>
-<div class="listingblock lines_space">
+<div class="listingblock lines_space console-input">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl get pods
-
-NAME                        READY   STATUS    RESTARTS   AGE
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl get pods</code></pre>
+</div>
+</div>
+<div class="listingblock console-output">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">NAME                        READY   STATUS    RESTARTS   AGE
 apps   1/1     Running   0          5s</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Then let&#8217;s go into the running pod to execute some commands:</p>
 </div>
-<div class="listingblock">
+<div class="listingblock console-input">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl exec -ti apps /bin/bash</code></pre>
 </div>

@@ -231,7 +231,7 @@ Although they are used in the tutorial, you could use others without any problem
 <h2 id="minikube"><a class="anchor" href="#minikube"></a>Setup Kubernetes</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The profile {profile} is created to run the tutorial:</p>
+<p>The profile my_profile is created to run the tutorial:</p>
 </div>
 <div class="tabset is-loading">
 <div class="ulist tabs">
@@ -251,7 +251,7 @@ Although they are used in the tutorial, you could use others without any problem
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">minikube start --memory=8192 --cpus=2 --kubernetes-version=v1.17.4 --vm-driver=virtualbox -p {profile}</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">minikube start --memory=8192 --cpus=3 --kubernetes-version=v1.17.4 --vm-driver=virtualbox -p my_profile</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -259,9 +259,9 @@ Although they are used in the tutorial, you could use others without any problem
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">❌  profile "{profile}" not found
-✅  Created a new profile : {profile}
-✅  minikube profile was successfully set to {profile}
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">❌  profile "my_profile" not found
+✅  Created a new profile : my_profile
+✅  minikube profile was successfully set to my_profile
 😄  [default] minikube v1.9.2 on Darwin 10.15.2
 ✨  Selecting 'virtualbox' driver from user configuration (alternates: [hyperkit])
 🔥  Creating virtualbox VM (CPUs=2, Memory=8192MB, Disk=50000MB) ...
@@ -270,7 +270,7 @@ Although they are used in the tutorial, you could use others without any problem
 🚜  Pulling images ...
 🚀  Launching Kubernetes ...
 ⌛  Waiting for cluster to come online ...
-🏄  Done! kubectl is now configured to use "{profile}"</code></pre>
+🏄  Done! kubectl is now configured to use "my_profile"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -278,7 +278,7 @@ Although they are used in the tutorial, you could use others without any problem
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">eval $(minikube docker-env -p {profile})</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">eval $(minikube docker-env -p my_profile)</code></pre>
 </div>
 </div>
 </div>
@@ -307,7 +307,7 @@ Kubernetes Version: v1.17.4</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">oc new-project {profile}</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">oc new-project my_profile</code></pre>
 </div>
 </div>
 </div>
